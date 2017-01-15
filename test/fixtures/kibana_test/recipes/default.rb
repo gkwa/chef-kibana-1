@@ -1,4 +1,6 @@
 
+include_recipe 'elasticsearch::default'
+
 elasticsearch_user 'elasticsearch' do
   action :nothing
 end
