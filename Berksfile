@@ -4,7 +4,7 @@ source 'https://api.berkshelf.com' if Gem::Version.new(Berkshelf::VERSION) > Gem
 
 metadata
 
-cookbook 'elasticsearch'
+cookbook 'elasticsearch', git: 'https://github.com/elastic/cookbook-elasticsearch'
 cookbook 'logstash'
 cookbook 'java'
 
