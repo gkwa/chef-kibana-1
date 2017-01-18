@@ -9,6 +9,16 @@ elasticsearch_install 'elasticsearch' do
   action :install
 end
 
+elasticsearch_configure 'elasticsearch' do
+  logging(action: 'INFO')
+  configuration(
+    'network.host' => '0.0.0.0'
+  )
+
+  action :manage
+  instance_name 'elasticsearch'
+end
+
 include_recipe 'kibana_lwrp::install'
 
 elasticsearch_service 'elasticsearch' do
