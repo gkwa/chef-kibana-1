@@ -20,3 +20,7 @@ suites:
     run_list:
       - recipe[apt::default]
       - recipe[kibana_test::default]
+    attributes:
+      kibana:
+        git:
+          config: 'config.js'
