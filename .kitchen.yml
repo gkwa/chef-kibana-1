@@ -19,6 +19,7 @@ suites:
   - name: default
     run_list:
       - recipe[apt::default]
+      - recipe[java::default]
       - recipe[kibana_test::default]
     attributes:
       kibana:
