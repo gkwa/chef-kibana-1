@@ -4,7 +4,7 @@ driver:
 
 driver_config:
   customize:
-    memory: 2500
+    memory: 1500
 
 provisioner:
   name: chef_zero
