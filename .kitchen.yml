@@ -26,6 +26,10 @@ suites:
       - recipe[java::default]
       - recipe[kibana_test::default]
     attributes:
+      java:
+        jdk_version: "8"
+        oracle:
+          accept_oracle_download_terms: true
       kibana:
         git:
           config: 'config.js'
