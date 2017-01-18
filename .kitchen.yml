@@ -33,4 +33,3 @@ suites:
       kibana:
         git:
           config: 'config.js'
-          branch: '5.1.2'
