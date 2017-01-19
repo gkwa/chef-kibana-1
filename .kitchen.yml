@@ -28,7 +28,3 @@ suites:
         jdk_version: '8'
         oracle:
           accept_oracle_download_terms: true
-      kibana:
-        git:
-          config: 'config.js'
-          branch: 'v3.1.2'
