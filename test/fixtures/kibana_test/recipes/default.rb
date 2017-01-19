@@ -3,6 +3,10 @@ execute 'update-ca-certificates -f && update-ca-certificates -f' do
   only_if 'which update-ca-certificates'
 end
 
+include_recipe 'apt::default'
+include_recipe 'java::default'
+
+
 elasticsearch_user 'elasticsearch' do
   action :nothing
 end
