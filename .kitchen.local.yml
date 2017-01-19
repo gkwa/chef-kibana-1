@@ -3,7 +3,7 @@ driver:
   name: vagrant
   network:
     - ["forwarded_port", {guest: 9200, host: 9200, auto_correct: true}]
-    - ["forwarded_port", {guest: 5959, host: 5959, auto_correct: true}]
+    - ["forwarded_port", {guest: 5601, host: 5601, auto_correct: true}]
 
 driver_config:
   vagrantfiles:
