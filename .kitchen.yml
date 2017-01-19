@@ -25,7 +25,7 @@ suites:
       - recipe[kibana_test::default]
     attributes:
       java:
-        jdk_version: "8"
+        jdk_version: '8'
         oracle:
           accept_oracle_download_terms: true
       kibana:
